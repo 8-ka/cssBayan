@@ -54,7 +54,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.list__item-container:hover .item-icon {
+.list__item-container:hover .item-icon,
+.menu__list-item:hover .list__item-container .item-icon {
   fill: white;
   transform: rotate(0deg);
 }
@@ -73,12 +74,19 @@ body {
   width: 50%;
 }
 
-.list__item-container:hover ~ .menu__item-sub {
+.list__item-container:hover ~ .menu__item-sub,
+.menu__item-sub:hover {
   max-height: 100vh;
+  cursor: pointer;
 }
 
 .list__item-container:hover,
-.list__item-container:hover .item-btn {
+.list__item-container:hover .item-btn,
+.menu__list-item:hover .list__item-container .item-btn {
   color: #fff;
   cursor: pointer;
+}
+
+.active {
+  max-height: 100vh;
 }
