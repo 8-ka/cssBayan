@@ -98,6 +98,13 @@ body {
   cursor: pointer;
 }
 
-.active {
+.default {
   max-height: 100vh;
+  fill: #fff;
+  color: #fff;
+  transform: rotate(0deg);
+}
+
+.menu__list-item:active {
+  opacity: 80%;
 }
