@@ -6,6 +6,7 @@
 
 body {
   background-color: #015C65;
+  margin: 2em auto;
 }
 
 .menu-header {
@@ -17,10 +18,19 @@ body {
   background-color: #1E6D74;
   margin: 0 auto;
   width: 50%;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.5);
+}
+
+.list__item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .item-btn {
-  display: block;
+  display: inline-block;
   padding: 2%;
   text-decoration: none;
   color: #35C0CD;
@@ -31,7 +41,22 @@ body {
 .menu__list-item {
   margin: 0 auto;
   list-style: none;
-  border-top: 2px solid #028E9B;
+  border-top: 0.2em solid #028E9B;
+}
+
+.item-icon {
+  width: 16px;
+  height: 16px;
+  fill: #35C0CD;
+  margin-right: 1em;
+  transform: rotate(180deg);
+  transition: transform 0.1s;
+  background-repeat: no-repeat;
+}
+
+.list__item-container:hover .item-icon {
+  fill: white;
+  transform: rotate(0deg);
 }
 
 .menu__item-sub {
@@ -48,6 +73,12 @@ body {
   width: 50%;
 }
 
-.item-btn:hover ~ .menu__item-sub {
+.list__item-container:hover ~ .menu__item-sub {
   max-height: 100vh;
+}
+
+.list__item-container:hover,
+.list__item-container:hover .item-btn {
+  color: #fff;
+  cursor: pointer;
 }
