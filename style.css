@@ -1,3 +1,45 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #015C65;
+}
+
+.menu-header {
+  color: #35C0CD;
+  padding: 2%;
+}
+
+.accordion-menu {
+  background-color: #1E6D74;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.item-btn {
+  display: block;
+  padding: 2%;
+  text-decoration: none;
+  color: #35C0CD;
+  font-weight: 600;
+  font-size: large;
+}
+
+.menu__list-item {
+  margin: 0 auto;
+  list-style: none;
+  border-top: 2px solid #028E9B;
+}
+
+.menu__item-sub {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.item-img {
+  width: 100%;
+  margin: 5px;
 }
