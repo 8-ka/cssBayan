@@ -35,11 +35,19 @@ body {
 }
 
 .menu__item-sub {
-  margin: 0 auto;
-  width: 50%;
+  background: #028E9B;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 0;
+  width: 100%;
 }
 
 .item-img {
-  width: 100%;
-  margin: 5px;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
+
+.item-btn:hover ~ .menu__item-sub {
+  max-height: 100vh;
 }
